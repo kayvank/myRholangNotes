@@ -1,4 +1,4 @@
-myRHolangNotes
+myRhoLangNotes
 ===
 My journey to learning [RhoLang-0.2](https://developer.rchain.coop/rholang-spec-0.2.pdf)
 

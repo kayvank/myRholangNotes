@@ -1,4 +1,4 @@
-* myRHolangNotes
+* myRhoLangNotes
 ** architecture
 *** Design
 **** [[http://rchain-architecture.readthedocs.io/en/latest/introduction/introduction.html][Introduction]]
@@ -19,7 +19,7 @@ Send/Receive messages over named channels
 A location where independent processes meet
 ***** Reflection
 A disciplined way to turn programs into data that programs can operate on and then turn the modified data back into new programs
-***** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#syntax-and-semantics][Syntax & Semantics
+***** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#syntax-and-semantics][Syntax & Semantics]]
 ****** rho-calculus constructs: "names" and "process"
 ******* names
 Names may be channels, value(s), 'quoted' process. quoted process is the 'code of process'. that's why Reflection is needed
