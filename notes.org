@@ -1,0 +1,46 @@
+* myRHolangNotes
+** architecture
+*** Design
+**** [[http://rchain-architecture.readthedocs.io/en/latest/introduction/introduction.html][Introduction]]
+**** [[http://rchain-architecture.readthedocs.io/en/latest/introduction/architecture-overview.html][overview]]
+**** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html][Contract interaction through the production of Rholang]]
+*** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#contract-design][Contract Design]]
+**** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#contract-overview][Contract overview]] 
+***** Contracts are triggered by a message
+***** Message is issued over a named channel
+****** Messages may be
+******* typed
+******* variables
+******* data structure
+******* code / process
+***** Agents 
+Send/Receive messages over named channels
+***** Named Channel
+A location where independent processes meet
+***** Reflection
+A disciplined way to turn programs into data that programs can operate on and then turn the modified data back into new programs
+***** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#syntax-and-semantics][Syntax & Semantics]] gfs
+****** rho-calculus constructs: "names" and "process"
+******* names
+Names may be channels, value(s), 'quoted' process. quoted process is the 'code of process'. thats why Reflection is needed
+******* process
+Process is a more general term for smart contract
+******* Reduction rule
+Reduction rule is how a computation is realized <=> COMM
+****** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#behavioral-types][Behavioral Types]]
+Behavioral type is a prxoperty of an object that binds to a discrete range of action patterns
+*** [[http://rchain-architecture.readthedocs.io/en/latest/execution_model/rhovm.html][Execution Model]]
+**** state of RhoVM \equiv state of of blockchain
+**** execution of contract \equiv application reduction rules Rholang source code
+***** effects the environment and state
+****** [[http://rchain-architecture.readthedocs.io/en/latest/_images/bindings_diagram.png][environment and state]] are 
+*******  mappings of
+******** name X location
+******** location X value
+******* RhoVM operates agains key-value data store 
+******** reduction rule \equiv COMM 
+COMM defines a computation to be performed when a value is observed at akey
+******** key is \equiv to name 
+key, name, is a memory reference holding a valued that is being substituted as a result of COMM 
+***** [[http://rchain-architecture.readthedocs.io/en/latest/_images/transaction_history.png][RhoVM state is \sum key-value]]
+*** [[http://rchain-architecture.readthedocs.io/en/latest/execution_model/rhovm.html#compilation][Compilation]]

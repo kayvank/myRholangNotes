@@ -1,0 +1,15 @@
+/** mutable state
+*
+**/
+new MakeCell in {
+  contract MakeCell(@init, get, set) = {
+    new valueStore in {
+      valueStore ! (init) |
+        contract get(ack) = {
+          for(@value <- valueStore) {
+            valueStore ! (newValue) | ack ! (valuejre)
+          }
+        }
+    }
+  }
+}

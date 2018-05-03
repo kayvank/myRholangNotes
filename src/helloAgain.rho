@@ -1,0 +1,6 @@
+contract @"helloAgain"(_) =  {
+  new chan in { 
+  chan ! ("hello again world!!") |
+    for ( @text <- chan ) { Nil }
+  }
+} | @"helloAgain" ! (Nil)

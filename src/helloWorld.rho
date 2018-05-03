@@ -1,0 +1,14 @@
+/**
+ * sample rholang
+**/
+
+contract @"helloworld"(aChannel) = {
+  aChannel ! ("hello world!")
+} | 
+/**
+ * the construct new... in creates a new private channel
+ **/
+
+new  myChannel in {
+  @"helloworld" ! (*myChannel) // * converts the channel name to 
+}

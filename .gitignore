@@ -1,0 +1,7 @@
+tags
+*.sc
+# emacs stuff
+**/.\#*
+rchain-storage-test*
+## local overrides
+.envrc
