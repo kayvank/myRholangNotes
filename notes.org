@@ -8,10 +8,10 @@
 **** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#contract-overview][Contract overview]] 
 ***** Contracts are triggered by a message
 ***** Message is issued over a named channel
-****** Messages may be
-******* typed
-******* variables
-******* data structure
+****** Messages are:
+******* typed 
+******* variables 
+******* data structure 
 ******* code / process
 ***** Agents 
 Send/Receive messages over named channels
@@ -19,7 +19,7 @@ Send/Receive messages over named channels
 A location where independent processes meet
 ***** Reflection
 A disciplined way to turn programs into data that programs can operate on and then turn the modified data back into new programs
-***** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#syntax-and-semantics][Syntax & Semantics]] gfs
+***** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#syntax-and-semantics][Syntax & Semantics
 ****** rho-calculus constructs: "names" and "process"
 ******* names
 Names may be channels, value(s), 'quoted' process. quoted process is the 'code of process'. thats why Reflection is needed
@@ -44,3 +44,6 @@ COMM defines a computation to be performed when a value is observed at akey
 key, name, is a memory reference holding a valued that is being substituted as a result of COMM 
 ***** [[http://rchain-architecture.readthedocs.io/en/latest/_images/transaction_history.png][RhoVM state is \sum key-value]]
 *** [[http://rchain-architecture.readthedocs.io/en/latest/execution_model/rhovm.html#compilation][Compilation]]
+** Coding
+*** [[https://github.com/rchain/rchain/blob/dev/docs/rholang/rholangtut-0.2.md][RhoLang tutorial]]
+**** 
