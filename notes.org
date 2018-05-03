@@ -7,8 +7,7 @@
 *** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#contract-design][Contract Design]]
 **** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#contract-overview][Contract overview]] 
 ***** Contracts are triggered by a message
-***** Message is issued over a named channel
-****** Messages are:
+***** Message is issued over a named channel, they are:
 ******* typed 
 ******* variables 
 ******* data structure 
