@@ -12,6 +12,7 @@
 ******* variables 
 ******* data structure 
 ******* code / process
+
 ***** Agents 
 Send/Receive messages over named channels
 ***** Named Channel
@@ -21,11 +22,11 @@ A disciplined way to turn programs into data that programs can operate on and th
 ***** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#syntax-and-semantics][Syntax & Semantics
 ****** rho-calculus constructs: "names" and "process"
 ******* names
-Names may be channels, value(s), 'quoted' process. quoted process is the 'code of process'. thats why Reflection is needed
+Names may be channels, value(s), 'quoted' process. quoted process is the 'code of process'. that's why Reflection is needed
 ******* process
 Process is a more general term for smart contract
 ******* Reduction rule
-Reduction rule is how a computation is realized <=> COMM
+Reduction rule is how a computation is realized \equiv COMM
 ****** [[http://rchain-architecture.readthedocs.io/en/latest/contracts/contract-design.html#behavioral-types][Behavioral Types]]
 Behavioral type is a prxoperty of an object that binds to a discrete range of action patterns
 *** [[http://rchain-architecture.readthedocs.io/en/latest/execution_model/rhovm.html][Execution Model]]
